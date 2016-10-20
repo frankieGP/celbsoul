@@ -5,24 +5,24 @@ $(document).ready(function() {
     var genderPref = $("select#genderPref").val();
     //var result = $(".A-H").val();
 
-  var celebrity = function(age, gender, genderPref){
+  var celebrity = function(){
 
       if (age < 25 && gender === "male" && genderPref === "female") {
-        return ("A");
+        return ("Miley");
       } else if (age <  25 && gender === "male" && genderPref === "male") {
-        return ("B");
+        return ("Brad");
       } else if (age < 25 && gender === "female" && genderPref === "male") {
-        return ("C");
+        return ("Craig");
       } else if (age < 25 && gender === "female" && genderPref === "female") {
-        return ("D");
+        return ("Dina");
       } else if (age > 25 && gender === "male" && genderPref === "female") {
-        return ("E");
+        return ("Elanore");
       } else if (age > 25 && gender === "male" && genderPref === "male") {
-        return ("F");
+        return ("Fred");
       } else if (age > 25 && gender === "female" && genderPref === "male") {
-        return ("G");
+        return ("George");
       } else if (age > 25 && gender === "female" && genderPref === "female") {
-        return ("H");
+        return ("Helena");
       }
     };
 
